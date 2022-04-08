@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Container>
       <Container w={{ base: '400px', md: 'full' }}>
         <Text fontSize={'18px'} fontWeight={600} color="#b4b4b4" textAlign={'center'}>
-          We are a social DAO leveraging Web3 to build DeFi tools and help funding Mental Health initiatives and organisations.
+          We are a social DAO leveraging Web3 to build DeFi tools and help fund Mental Health initiatives and organizations.
         </Text>
       </Container>
       <Link href='https://discord.gg/S6BZJTgt' isExternal>

@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h2 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#c8a4c4, #ffb7c2, #feeaee);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

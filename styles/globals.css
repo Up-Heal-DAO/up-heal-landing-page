@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 a {
@@ -13,11 +14,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-h2 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#c8a4c4, #ffb7c2, #feeaee);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

@@ -9,14 +9,7 @@ const theme = extendTheme({
   fonts: {
     heading: "Montserrat",
     body: "Montserrat",
-  },
-  styles: {
-    global: {
-      html: {
-        height: '100%'
-      },
-    },
-  },
+  }
 })
 
 

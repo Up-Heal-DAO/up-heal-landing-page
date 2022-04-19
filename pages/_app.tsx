@@ -15,9 +15,6 @@ const theme = extendTheme({
       html: {
         height: '100%'
       },
-      body: {
-        bgGradient: 'linear-gradient(0deg, #FF8295 51.22%, rgba(255, 182, 193, 0.5) 114.97%)',
-      },
     },
   },
 })

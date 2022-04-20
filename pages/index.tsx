@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack } from '@chakra-ui/react'
 import Navbar from '../components/NavBar'
-
+import Card from "../components/Card/Card"
 
 const Home: NextPage = () => {
   return (
@@ -50,16 +50,7 @@ const Home: NextPage = () => {
           </VStack>
         </Flex>
       </Container>
-      <Container bg={'white'} maxWidth={'full'} h={'360px'}>
-        <Flex py={20}>
-          <VStack w="full" h="full" p={10} spacing={10} alignItems={'flex-start'} flexDirection={'column'}>
-            <Container bg="black">
-            </Container>
-            <Container bg="black">
-            </Container>
-          </VStack>
-        </Flex>
-      </Container>
+      <Card />
       <Container maxWidth={'full'} h={'360px'}>
         <Text fontWeight={800} color="white" fontSize={'80px'} mt="72px" textAlign={'center'}>Be a Founder</Text>
         <Image src='/images/line-4.png' w={'154px'} alt='Line design' />

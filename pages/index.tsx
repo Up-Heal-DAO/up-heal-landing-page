@@ -5,7 +5,7 @@ import Navbar from '../components/NavBar'
 
 const Home: NextPage = () => {
   return (
-    <Stack bgGradient={'linear-gradient(0deg, #FF8295 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
+    <Stack bgGradient={'linear-gradient(0deg, brand.100 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
       <Navbar />
       <Box width={'735px'} height={'534px'}>
         <Image position={'absolute'} left="-4.72%" right={'75.76%'} top="17.46%" bottom={'75.3%'} src='/images/line-1.png' w={'417px'} h={'402.84px'} alt='Line design' />
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         </Heading>
         <Text fontSize={'32px'} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
         <Flex justifyContent={'center'}>
-          <Button mt={'150px'} color={'#FF8295'} borderRadius={'24px'} bg={'white'}>
+          <Button mt={'150px'} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
             Join the community
           </Button>
         </Flex>

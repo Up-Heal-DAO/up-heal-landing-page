@@ -8,7 +8,7 @@ export const Navbar = () => {
         <Image src='/images/logo-navbar.png' w={'56px'} h={'66px'} alt='Dan Abramov' />
       </Container>
       <Container display={'flex'} justifyContent={'flex-end'} alignItems="center">
-        <Button position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'#FF8295'}>
+        <Button position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
           Connect Wallet
         </Button>
       </Container>

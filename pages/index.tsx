@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         </Heading>
         <Text fontSize={{ base: '50px', md: '32px' }} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
         <Flex justifyContent={'center'}>
-          <Button mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
+          <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
             Join the community
           </Button>
         </Flex>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
             <Text fontSize={'18px'} color={'white'}>
               At the end of each season, the DAO’s members will vote to decide which organizations or initiatives we will support with a portion of the fees generated.
             </Text>
-            <Button color={'white'} borderRadius={'24px'} bg={'transparent'} border='1px solid white'>
+            <Button size='lg' color={'white'} borderRadius={'24px'} bg={'transparent'} border='1px solid white'>
               Read more
             </Button>
           </VStack>

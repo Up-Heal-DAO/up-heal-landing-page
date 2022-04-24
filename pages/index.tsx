@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useMediaQuery } from '@chakra-ui/react'
-import Navbar from '../components/NavBar'
+import Navbar from '../components/Navbar/NavBar'
 import Card from "../components/Card/Card"
+import Footer from "../components/Footer/Footer"
 
 const cardContent = [{
   title: 'BUILD',
@@ -40,7 +41,7 @@ const Home: NextPage = () => {
         <Text fontSize={{ base: '50px', md: '32px' }} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
         <Flex justifyContent={'center'}>
           <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
-            Join the community
+            Join the community on Discord
           </Button>
         </Flex>
       </Box>
@@ -80,6 +81,9 @@ const Home: NextPage = () => {
       <Container display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} maxWidth={'full'} h={'360px'}>
         <Text fontWeight={800} color="white" fontSize={'80px'} mt="72px" textAlign={'center'}>Join The DAO</Text>
         <Image src='/images/line-4.png' w={'154px'} alt='Line design' />
+      </Container>
+      <Container h={'60px'}>
+        <Footer />
       </Container>
     </Stack >
   )

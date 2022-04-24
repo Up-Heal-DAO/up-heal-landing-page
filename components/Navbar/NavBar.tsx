@@ -1,4 +1,4 @@
-import { Button, Flex, Container, Image } from '@chakra-ui/react'
+import { Button, Flex, Container, Image, Link } from '@chakra-ui/react'
 
 
 export const Navbar = () => {
@@ -8,9 +8,11 @@ export const Navbar = () => {
         <Image src='/images/logo-navbar.png' w={'56px'} h={'66px'} alt='Dan Abramov' />
       </Container>
       <Container display={'flex'} justifyContent={'flex-end'} alignItems="center">
-        <Button size='lg' position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
-          Connect Wallet
-        </Button>
+        <Link href='https://discord.gg/CHvPqtzF' isExternal>
+          <Button size='lg' position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
+            Join us
+          </Button>
+        </Link>
       </Container>
     </Flex>
   )

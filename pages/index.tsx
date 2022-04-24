@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useMediaQuery } from '@chakra-ui/react'
+import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useMediaQuery, Link } from '@chakra-ui/react'
 import Navbar from '../components/Navbar/NavBar'
 import Card from "../components/Card/Card"
 import Footer from "../components/Footer/Footer"
@@ -40,9 +40,11 @@ const Home: NextPage = () => {
         </Heading>
         <Text fontSize={{ base: '50px', md: '32px' }} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
         <Flex justifyContent={'center'}>
-          <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
-            Join the community on Discord
-          </Button>
+          <Link href='https://discord.gg/CHvPqtzF' isExternal>
+            <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
+              Join the community
+            </Button>
+          </Link>
         </Flex>
       </Box>
       <Container maxWidth={'container.xl'} p={0}>
@@ -67,9 +69,11 @@ const Home: NextPage = () => {
             <Text fontSize={'18px'} color={'white'}>
               At the end of each season, the DAO’s members will vote to decide which organizations or initiatives we will support with a portion of the fees generated.
             </Text>
-            <Button size='lg' color={'white'} borderRadius={'24px'} bg={'transparent'} border='1px solid white'>
-              Read more
-            </Button>
+            <Link href='https://foul-color-34f.notion.site/Up-Heal-DAO-8c250e000a874920ad60bd23105155e0' isExternal>
+              <Button size='lg' color={'white'} borderRadius={'24px'} bg={'transparent'} border='1px solid white'>
+                Read more
+              </Button>
+            </Link>
           </VStack>
         </Flex>
       </Container>

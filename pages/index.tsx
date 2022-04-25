@@ -1,27 +1,95 @@
 import type { NextPage } from 'next'
-import { Stack, Container, Heading, Text, Image, Button, Link } from '@chakra-ui/react'
+import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useMediaQuery, Link } from '@chakra-ui/react'
+import Navbar from '../components/Navbar/NavBar'
+import Card from "../components/Card/Card"
+import Footer from "../components/Footer/Footer"
 
+const cardContent = [{
+  title: 'BUILD',
+  description:
+    'Developing DeFi tools of quality. Our team of designers and developers are ready to build responsive solutions.'
+},
+{
+  title: 'FUNDING',
+  description:
+    'Attracting funding, connecting founders and investors. We make the different with our power networking.'
+},
+{
+  title: 'IMPROVE',
+  description:
+    'Improving health with help of organisations and initiatives that is a part of this ecosystem.'
+},
+]
 
 const Home: NextPage = () => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)")
+
   return (
-    <Stack spacing={"34px"} alignItems={'center'} position={'fixed'} top="50%" left="50%" transform={'translate(-50%, -50%)'}>
-      <Image boxSize='150px' src='/images/website-logo.png' alt='Up Heal Logo' />
-      <Container w={{ base: '400px', md: 'full' }}>
-        <Heading fontFamily={'rubik'} textAlign={'center'} fontSize={'36px'}>
-          Up Heal DAO is Coming Soon.
+    <Stack bgGradient={'linear-gradient(0deg, brand.100 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
+      <Navbar />
+      <Box width={'735px'} height={'534px'}>
+        {
+          !isMobile ?
+            <>
+              <Image position={'absolute'} left="-4.72%" right={'75.76%'} top="17.46%" bottom={'75.3%'} src='/images/line-1.png' w={'417px'} h={'402.84px'} alt='Line design' />
+              <Image position={'absolute'} left="74.54%" right={'-5.54%'} top="15.32px" bottom={'65.83%'} src='/images/line-2.png' w={'446.48px'} h={'500.79px'} alt='Line design' />
+            </>
+            : null}
+        <Heading mt={{ base: '80px', md: '150px' }} fontSize={{ base: '100px', md: '54px' }} textAlign={'center'} color={'white'}>
+          Up Heal DAO
         </Heading>
+        <Text fontSize={{ base: '50px', md: '32px' }} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
+        <Flex justifyContent={'center'}>
+          <Link href='https://discord.gg/CHvPqtzF' isExternal>
+            <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
+              Join the community
+            </Button>
+          </Link>
+        </Flex>
+      </Box>
+      <Container maxWidth={'container.xl'} p={0}>
+        <Flex flexDirection={{ base: 'column', md: 'row' }} py={20}>
+          <VStack w="full" h="full" p={10} spacing={10} alignItems={'flex-start'} flexDirection={'row'}>
+            <Container w={'45%'}>
+              <Text lineHeight={'97.52px'} fontSize={{ base: '100px', md: '80px' }} color={'white'} fontWeight={700}>
+                Who We are
+              </Text>
+            </Container>
+            <Image src='/images/line-3.png' w={'200px'} h={'190.34px'} alt='Line design' />
+          </VStack>
+          <VStack w="full" h="full" p={10} spacing={5} alignItems={'flex-start'}>
+            <Text lineHeight={{ base: '56px', md: '39px' }} fontSize={{ base: '32px', md: '32px' }} color={'white'} fontWeight={800}>
+              Up Heal is a DAO  on building DeFi tools for funding Mental Health organisations and initiatives.
+            </Text>
+            <Text fontSize={'18px'} color={'white'}>
+              We are a social DAO leveraging Web3 to build DeFi tools such as staking pools,
+              yield optimizers, and decentralized funding mechanisms to allocate a portion of the fees to Mental Health organizations and charities.
+              #DeFi4good
+            </Text>
+            <Text fontSize={'18px'} color={'white'}>
+              At the end of each season, the DAO’s members will vote to decide which organizations or initiatives we will support with a portion of the fees generated.
+            </Text>
+            <Link href='https://foul-color-34f.notion.site/Up-Heal-DAO-8c250e000a874920ad60bd23105155e0' isExternal>
+              <Button size='lg' color={'white'} borderRadius={'24px'} bg={'transparent'} border='1px solid white'>
+                Read more
+              </Button>
+            </Link>
+          </VStack>
+        </Flex>
       </Container>
-      <Container w={{ base: '400px', md: 'full' }}>
-        <Text fontSize={'18px'} fontWeight={600} color="#b4b4b4" textAlign={'center'}>
-          We are a social DAO leveraging Web3 to build DeFi tools and help fund Mental Health initiatives and organizations.
-        </Text>
+      <Container display={'flex'} alignItems={'center'} justifyContent={{ base: 'space-evenly', md: 'space-around' }} flexDirection={{ base: 'column', md: 'row' }} bg={'white'} maxWidth={'full'} h={{ base: '700px', md: '360px' }}>
+        {cardContent.map(content =>
+          <Card key={content.title} title={content.title} description={content.description} />
+        )}
       </Container>
-      <Link href='https://discord.gg/S6BZJTgt' isExternal>
-        <Button background={'transparent'} border={'1px solid #ffb7c2'}>
-          Join the community
-        </Button>
-      </Link>
-    </Stack>
+      <Container display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} maxWidth={'full'} h={'360px'}>
+        <Text fontWeight={800} color="white" fontSize={'80px'} mt="72px" textAlign={'center'}>Join The DAO</Text>
+        <Image src='/images/line-4.png' w={'154px'} alt='Line design' />
+      </Container>
+      <Container h={'60px'}>
+        <Footer />
+      </Container>
+    </Stack >
   )
 }
 

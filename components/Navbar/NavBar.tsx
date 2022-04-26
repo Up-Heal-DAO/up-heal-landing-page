@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <Flex justify={'space-between'} alignItems={'center'} width={'full'} h={'100px'} background='white'>
       <Container display={'flex'} alignItems="center" justifyContent={'flex-start'}>
-        <Image src='/images/logo-navbar.png' w={'56px'} h={'66px'} alt='Dan Abramov' />
+        <Image src='/images/up-heal-logo-website.png' w={'80px'} h={'80px'} alt='Up Heal Logo' />
       </Container>
       <Container display={'flex'} justifyContent={'flex-end'} alignItems="center">
         <Link href='https://discord.gg/CHvPqtzF' isExternal>

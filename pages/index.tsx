@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           </VStack>
           <VStack w="full" h="full" p={10} spacing={5} alignItems={'flex-start'}>
             <Text lineHeight={{ base: '56px', md: '39px' }} fontSize={{ base: '32px', md: '32px' }} color={'white'} fontWeight={800}>
-              Up Heal is a DAO  on building DeFi tools for funding Mental Health organisations and initiatives.
+              We are a collective working on improving Well-being and Mental Health around the globe. 🧘🌎
             </Text>
             <Text fontSize={'18px'} color={'white'}>
               We are a social DAO leveraging Web3 to build DeFi tools such as staking pools,

@@ -5,19 +5,19 @@ import Card from "../components/Card/Card"
 import Footer from "../components/Footer/Footer"
 
 const cardContent = [{
-  title: 'BUILD',
+  title: 'Earn',
   description:
-    'Developing DeFi tools of quality. Our team of designers and developers are ready to build responsive solutions.'
+    'The HEAL token will be our governance token and a way to reward DAO contributors. You will be able to buy the token on decentralized exchanges such as Uniswap simply by contributing to the DAO.'
 },
 {
-  title: 'FUNDING',
+  title: 'Get Funded',
   description:
-    'Attracting funding, connecting founders and investors. We make the different with our power networking.'
+    'As a community our main goal is to fund Mental Health initiatives and organizations, you can make a proposal to the DAO and get your project funded.'
 },
 {
-  title: 'IMPROVE',
+  title: 'Community First',
   description:
-    'Improving health with help of organisations and initiatives that is a part of this ecosystem.'
+    'You can hang the DAO discord and meet like-minded people interested in web3, personal development, and improving mental health around the world. Anyone can propose and participate to the DAO.'
 },
 ]
 
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         </Heading>
         <Text fontSize={{ base: '50px', md: '32px' }} color={'white'} textAlign="center">We are funding Mental Health Organizations and community initiatives.</Text>
         <Flex justifyContent={'center'}>
-          <Link href='https://discord.gg/CHvPqtzF' isExternal>
+          <Link href='https://discord.gg/QkjdaQzrx3' isExternal>
             <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
               Join the community
             </Button>

@@ -17,7 +17,7 @@ const cardContent = [{
 {
   title: 'Community First',
   description:
-    'You can hang the DAO discord and meet like-minded people interested in web3, personal development, and improving mental health around the world. Anyone can propose and participate to the DAO.'
+    'You can hang in the DAO discord and meet like-minded people interested in web3, personal development, and improving mental health around the globe. Anyone can propose and participate to the DAO.'
 },
 ]
 

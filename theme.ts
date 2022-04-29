@@ -1,6 +1,15 @@
 import { extendTheme } from '@chakra-ui/react';
 
 export const theme = extendTheme({
+  components: {
+    Link: {
+      baseStyle: {
+        _hover: {
+          textDecoration: 'none',
+        },
+      },
+    },
+  },
   fonts: {
     heading: 'Montserrat',
     body: 'Montserrat',

@@ -4,21 +4,22 @@ import Navbar from '../components/Navbar/NavBar'
 import Card from "../components/Card/Card"
 import Footer from "../components/Footer/Footer"
 
-const cardContent = [{
-  title: 'Earn',
-  description:
-    'The HEAL token will be our governance token and a way to reward DAO contributors. You will be able to buy the token on decentralized exchanges such as Uniswap simply by contributing to the DAO.'
-},
-{
-  title: 'Get Funded',
-  description:
-    'As a community our main goal is to fund Mental Health initiatives and organizations, you can make a proposal to the DAO and get your project funded.'
-},
-{
-  title: 'Community First',
-  description:
-    'You can hang the DAO discord and meet like-minded people interested in web3, personal development, and improving mental health around the world. Anyone can propose and participate to the DAO.'
-},
+const cardContent = [
+  {
+    title: 'Community First',
+    description:
+      'You can hang in the DAO discord and contributes to the DAO with like-minded people interested in web3, personal development, and improving mental health around the world.'
+  },
+  {
+    title: 'Get Funded',
+    description:
+      'As a community our main goal is to fund Mental Health initiatives and organizations, you can make a proposal to the DAO and get your project funded.'
+  },
+  {
+    title: 'Earn',
+    description:
+      'The HEAL token will be our governance token and a way to reward DAO contributors. You will be able to buy the token on decentralized exchanges such as Uniswap simply by contributing to the DAO.'
+  },
 ]
 
 const Home: NextPage = () => {
@@ -42,7 +43,7 @@ const Home: NextPage = () => {
         <Flex justifyContent={'center'}>
           <Link href='https://discord.gg/QkjdaQzrx3' isExternal>
             <Button size='lg' mt={{ base: '80px', md: '150px' }} color={'brand.100'} borderRadius={'24px'} bg={'white'}>
-              Join the community
+              Join the Discord community
             </Button>
           </Link>
         </Flex>

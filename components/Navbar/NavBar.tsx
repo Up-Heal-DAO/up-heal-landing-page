@@ -8,9 +8,9 @@ export const Navbar = () => {
         <Image src='/images/up-heal-logo-website.png' w={'80px'} h={'80px'} alt='Up Heal Logo' />
       </Container>
       <Container display={'flex'} justifyContent={'flex-end'} alignItems="center">
-        <Link href='https://discord.gg/QkjdaQzrx3' isExternal>
+        <Link href='https://www.getrevue.co/profile/uphealdao' isExternal>
           <Button size='lg' position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
-            Join us
+            Newsletter
           </Button>
         </Link>
       </Container>

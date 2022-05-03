@@ -8,12 +8,12 @@ const cardContent = [
   {
     title: 'Community First',
     description:
-      'You can hang in the DAO discord and contributes to the DAO with like-minded people interested in web3, personal development, and improving mental health around the world.'
+      'You can hang in the DAO discord and contribute to the DAO with like-minded people interested in web3, personal development, and improving mental health worldwide.'
   },
   {
     title: 'Get Funded',
     description:
-      'As a community, our primary goal is to fund Mental Health initiatives and organizations;  you can make a governance proposal to the DAO and get your project funded.'
+      'As a community, our primary goal is to fund community Mental Health initiatives and organizations; you can make a governance proposal to the DAO and get your project or initiative funded if the DAO approves it.'
   },
   {
     title: 'Make an impact',

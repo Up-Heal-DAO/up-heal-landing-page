@@ -13,12 +13,12 @@ const cardContent = [
   {
     title: 'Get Funded',
     description:
-      'As a community our main goal is to fund Mental Health initiatives and organizations, you can make a proposal to the DAO and get your project funded.'
+      'As a community, our primary goal is to fund Mental Health initiatives and organizations;  you can make a governance proposal to the DAO and get your project funded.'
   },
   {
-    title: 'Earn',
+    title: 'Make an impact',
     description:
-      'The HEAL token will be our governance token and a way to reward DAO contributors. You will be able to buy the token on decentralized exchanges such as Uniswap simply by contributing to the DAO.'
+      'By being involved in the Up Heal DAO community as a contributor, you are helping us impact the world and improve mental health awareness across the globe 🌎.'
   },
 ]
 

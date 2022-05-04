@@ -3,6 +3,8 @@ import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useM
 import Navbar from '../components/Navbar/NavBar'
 import Card from "../components/Card/Card"
 import Footer from "../components/Footer/Footer"
+import Script from 'next/script'
+
 
 const cardContent = [
   {
@@ -27,6 +29,19 @@ const Home: NextPage = () => {
 
   return (
     <Stack bgGradient={'linear-gradient(0deg, brand.100 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${process.env.GA_MEASUREMENT_ID});
+        `}
+      </Script>
       <Navbar />
       <Box width={'735px'} height={'534px'}>
         {

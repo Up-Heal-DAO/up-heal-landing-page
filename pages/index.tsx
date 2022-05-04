@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 import type { NextPage } from 'next'
 import { Button, Stack, Flex, Container, Image, Text, Heading, Box, VStack, useMediaQuery, Link } from '@chakra-ui/react'
 import Navbar from '../components/Navbar/NavBar'
@@ -29,18 +30,16 @@ const Home: NextPage = () => {
 
   return (
     <Stack bgGradient={'linear-gradient(0deg, brand.100 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GAMEASUREMENTID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+      <Script strategy="lazyOnload">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', ${process.env.GAMEASUREMENTID});
-        `}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+        page_path: window.location.pathname,
+        });
+    `}
       </Script>
       <Navbar />
       <Box width={'735px'} height={'534px'}>

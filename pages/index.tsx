@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <Stack bgGradient={'linear-gradient(0deg, brand.100 51.22%, rgba(255, 182, 193, 0.5) 114.97%)'} display={'flex'} justifyContent="center" alignItems={'center'}>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GAMEASUREMENTID}`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', ${process.env.GA_MEASUREMENT_ID});
+          gtag('config', ${process.env.GAMEASUREMENTID});
         `}
       </Script>
       <Navbar />

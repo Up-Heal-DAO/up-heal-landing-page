@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           !isMobile ?
             <>
               <Image position={'absolute'} left="-4.72%" right={'75.76%'} top="17.46%" bottom={'75.3%'} src='/images/line-1.png' w={'417px'} h={'402.84px'} alt='Line design' />
-              <Image position={'absolute'} left="74.54%" right={'-5.54%'} top="15.32px" bottom={'65.83%'} src='/images/line-2.png' w={'446.48px'} h={'500.79px'} alt='Line design' />
+              <Image position={'absolute'} left="75%" right={'-8.54%'} top="15.32px" bottom={'65.83%'} src='/images/line-2.png' w={'446.48px'} h={'500.79px'} alt='Line design' />
             </>
             : null}
         <Heading mt={{ base: '80px', md: '150px' }} fontSize={{ base: '100px', md: '54px' }} textAlign={'center'} color={'white'}>
@@ -73,15 +73,15 @@ const Home: NextPage = () => {
             <Image src='/images/line-3.png' w={'200px'} h={'190.34px'} alt='Line design' />
           </VStack>
           <VStack w="full" h="full" p={10} spacing={5} alignItems={'flex-start'}>
-            <Text lineHeight={{ base: '56px', md: '39px' }} fontSize={{ base: '32px', md: '32px' }} color={'white'} fontWeight={800}>
-              We are a collective working on improving Well-being and Mental Health around the globe. 🧘🌎
+            <Heading color={'white'} as='h2' size='xl' fontWeight={800}>
+              Our primary focus is to bring value back to our community and external people suffering from mental health issues; we are all in together.
+            </Heading>
+            <Text fontSize={{ base: '32px', md: '18px' }} color={'white'}>
+              Up Heal DAO is a decentralized community focused on helping Mental Health improvement
+              initiatives from the community (for example, financing twitter space on Mental Health,
+              writing articles, and building a community that cares for each other) as well as funding mental health initiatives voted by the community.
             </Text>
-            <Text fontSize={'18px'} color={'white'}>
-              We are a social DAO leveraging Web3 to build DeFi tools such as staking pools,
-              yield optimizers, and decentralized funding mechanisms to allocate a portion of the fees to Mental Health organizations and charities.
-              #DeFi4good
-            </Text>
-            <Text fontSize={'18px'} color={'white'}>
+            <Text fontSize={{ base: '32px', md: '18px' }} color={'white'}>
               At the end of each season, the DAO’s members will vote to decide which organizations or initiatives we will support with a portion of the fees generated.
             </Text>
             <Link href='https://foul-color-34f.notion.site/Getting-Started-2f06bb4b2cbb45bbb0f7c6d5c7e0148d' isExternal>

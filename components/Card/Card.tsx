@@ -7,9 +7,9 @@ interface CardInterface {
 
 export const Card = ({ title, description }: CardInterface) => {
   return (
-    <Container width={'371px'} borderRadius={'24px'} h={'184px'} border={'1px solid #FF8295'}>
-      <Text fontSize={'32px'} fontWeight={600} margin={'0px 8px'} color={'#FF8295'}>{title}</Text>
-      <Text fontSize={'16px'} fontWeight={400} margin={'0px 8px'} color={'#FF8295'}>{description}</Text>
+    <Container width={{ md: '371px' }} borderRadius={'24px'} h={'184px'} border={'1px solid #FF8295'}>
+      <Text fontSize={'32px'} fontWeight={600} margin={'0px 8px'} color={'brand.100'}>{title}</Text>
+      <Text fontSize={'16px'} fontWeight={400} margin={'0px 8px'} color={'brand.100'}>{description}</Text>
     </Container>
 
 

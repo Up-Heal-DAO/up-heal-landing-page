@@ -73,14 +73,13 @@ const Home: NextPage = () => {
         </Flex>
         <VStack maxWidth="496px" h="full" mx={{ base: 'auto', md: 0 }} px={{ base: 10 }} pr={{ md: 0 }} my={{ base: 10, md: 0 }} spacing={5} alignItems={'flex-start'}>
           <Heading color={'white'} as='h2' size='xl' fontWeight={800}>
-            Our primary focus is to bring value back to our community and external people suffering from mental health issues; we are all in together.
+            We are on a mission to bring mental health awareness through #Web3.
           </Heading>
-          <Text fontSize={{ base: '32px', md: '18px' }} color={'white'}>
+          <Text fontSize={{ base: '16px', md: '18px' }} color={'white'}>
             Up Heal DAO is a decentralized community focused on helping Mental Health improvement
-            initiatives from the community (for example, financing twitter space on Mental Health,
-            writing articles, and building a community that cares for each other) as well as funding mental health initiatives voted by the community.
+            initiatives from the community.
           </Text>
-          <Text fontSize={{ base: '32px', md: '18px' }} color={'white'}>
+          <Text fontSize={{ base: '16px', md: '18px' }} color={'white'}>
             At the end of each season, the DAO’s members will vote to decide which organizations or initiatives we will support with a portion of the fees generated.
           </Text>
           <Link href='https://foul-color-34f.notion.site/Getting-Started-2f06bb4b2cbb45bbb0f7c6d5c7e0148d' isExternal>

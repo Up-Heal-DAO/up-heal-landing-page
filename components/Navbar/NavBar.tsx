@@ -2,10 +2,10 @@ import { useState } from 'react'
 import React from "react";
 import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
 
-import Logo from "./Logo";
+import Logo from "./logo";
 
-export const NavBar = (props) => {
-  const [isOpen, setIsOpen] = React.useState(false);
+export const NavBar = (props: JSX.IntrinsicAttributes & { [x: string]: any; children: any; }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -77,9 +77,9 @@ const MenuLinks = ({ isOpen }) => {
         pt={[4, 4, 0, 0]}
       >
         <MenuItem to="https://forum.uphealdao.xyz/" fontSize={'16px'} fontWeight={500} lineHeight={'19.5px'} color={'brand.100'}>Community</MenuItem>
-        <MenuItem to="https://snapshot.org/#/upheal.eth" fontSize={'16px'} fontWeight={500} lineHeight={'19.5px'} color={'brand.100' } >Governance </MenuItem>
+        <MenuItem to="https://snapshot.org/#/upheal.eth" fontSize={'16px'} fontWeight={500} lineHeight={'19.5px'} color={'brand.100'} >Governance </MenuItem>
         <MenuItem to="https://discord.gg/QkjdaQzrx3" isLast>
-            <Button size='lg' position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
+          <Button size='lg' position={'relative'} zIndex={10} colorScheme='white' color={'white'} borderRadius={'24px'} bg={'brand.100'}>
             Discord
           </Button>
         </MenuItem>

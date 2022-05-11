@@ -45,7 +45,7 @@ const MenuIcon = () => (
   </svg>
 );
 
-const MenuToggle = ({ toggle, isOpen }) => {
+const MenuToggle = ({ toggle, isOpen }: { toggle: any, isOpen: boolean }) => {
   return (
     <Box mr={5} display={{ base: "block", md: "none" }} onClick={toggle}>
       {isOpen ? <CloseIcon /> : <MenuIcon />}
@@ -53,7 +53,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
   );
 };
 
-const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
+const MenuItem = ({ children, isLast, to = "/", ...rest }: any) => {
   return (
     <Link href={to}>
       <Text display="block" {...rest}>
@@ -63,7 +63,7 @@ const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   );
 };
 
-const MenuLinks = ({ isOpen }) => {
+const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <Box
       mr={5} display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -88,7 +88,7 @@ const MenuLinks = ({ isOpen }) => {
   );
 };
 
-const NavBarContainer = ({ children, ...props }) => {
+const NavBarContainer = ({ children, ...props }: any) => {
   return (
     <Flex
       as="nav"

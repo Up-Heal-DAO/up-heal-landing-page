@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 /* eslint-disable @next/next/inline-script-id */
 import type { NextPage } from 'next'
 import { Button, Flex, Container, Image, Text, Heading, Box, VStack, Link, useMediaQuery } from '@chakra-ui/react'
@@ -34,18 +35,7 @@ const Home: NextPage = () => {
         <title>Up Heal DAO</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
-      <Script strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-          page_path: window.location.pathname,
-          });
-        `}
-      </Script>
-      <Navbar />
+      <Navbar children={undefined} />
       <Box position='relative' overflow='hidden' pt={{ base: '58px', md: 40 }} pb={{ base: '98px', md: '137px' }}>
         <Image src='/images/line-1.svg' alt='' position='absolute' w={{ base: '48%', md: '29%' }} h='auto' left='0' top={{ base: '185px', md: '44px' }} transform='auto' translateX='-43%' />
         {isMobile
